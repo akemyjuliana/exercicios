@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício HTML e JS</title>
+</head>
+<body>
+    <h1>Exercício Módulo 7</h1>
+    <input type="number" class="A" id="A">
+    <input type="number" class="B" id="B">
+    <input type="button" value="Verificar" onclick="validar()">
+
+    <script>
+        function validar () {
+            let A = document.querySelector('input#A')
+            let B = document.querySelector('input#B')
+            let a1 = Number(A.value)
+            let b1 = Number(B.value)
+            if (b1 > a1) {
+                alert ('Formulário Válido')
+            } else {
+                alert ('Formulário Inválido')
+            }
+        }
+    </script>
+</body>
+</html>
